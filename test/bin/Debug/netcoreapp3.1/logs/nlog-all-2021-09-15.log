@@ -1,0 +1,42 @@
+2021-09-15 17:16:34.4241||DEBUG|LibraryAccounting.Program|init main 
+2021-09-15 17:17:22.3206||ERROR|LibraryAccounting.Program|Stopped program because of exception System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Hosting.IHost' while attempting to activate 'LibraryAccounting.Infrastructure.Repositories.MigrationManager'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateEnumerable(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.<>c__DisplayClass7_0.<GetCallSite>b__0(Type type)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.<>c__DisplayClass7_0.<GetCallSite>b__0(Type type)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Hosting.WebHost.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at LibraryAccounting.Program.Main(String[] args) in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting\Program.cs:line 28
+2021-09-15 17:21:10.1150||DEBUG|LibraryAccounting.Program|init main 
+2021-09-15 17:21:11.6842||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 17:21:11 
+2021-09-15 17:21:11.8460||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-15 17:21:11.8460||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-15 17:21:11.8460||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-15 17:21:13.7979||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 17:21:13 
+2021-09-15 17:21:13.9234||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 17:21:13 
+2021-09-15 17:21:44.3889||INFO|LibraryAccounting.Pages.Account.LoginModel|Succeeded login: 17:21:44 
+2021-09-15 17:21:44.4116||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 17:21:44 
+2021-09-15 17:21:46.7881||INFO|LibraryAccounting.Pages.ClientPages.BookedBooksModel|BookedBooks page is visited: 17:21:46 
+2021-09-15 17:21:47.8915||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 17:21:47 

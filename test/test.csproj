@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>FirstAssembly.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.13.1" />
+    <PackageReference Include="Google.Apis.Calendar.v3" Version="1.55.0.2410" />
+    <PackageReference Include="Google.Apis.Oauth2.v2" Version="1.55.0.1869" />
+    <PackageReference Include="Google.Apis.Vision.v1" Version="1.55.0.2412" />
+    <PackageReference Include="Telegram.Bot" Version="16.0.2" />
+    <PackageReference Include="Telegram.Bot.Extensions.Polling" Version="0.2.0" />
+  </ItemGroup>
+
+</Project>

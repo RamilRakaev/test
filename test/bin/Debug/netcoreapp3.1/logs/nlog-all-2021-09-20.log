@@ -1,0 +1,302 @@
+2021-09-20 11:39:43.1321||DEBUG|LibraryAccounting.Program|init main 
+2021-09-20 11:39:45.2403||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 11:39:45 
+2021-09-20 11:39:45.7317||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-20 11:39:45.7317||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-20 11:39:45.7528||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-20 11:39:47.7999||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 11:39:47 
+2021-09-20 11:39:47.9893||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 11:39:47 
+2021-09-20 11:39:48.1620||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 11:39:48 
+2021-09-20 11:39:55.1721|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 11:39:55.2486|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 11:39:55.3068||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 11:39:55 
+2021-09-20 11:39:57.7326||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Books filter out: 11:39:57 
+2021-09-20 11:40:00.3458||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Books filter out: 11:40:00 
+2021-09-20 12:07:21.5159||DEBUG|LibraryAccounting.Program|init main 
+2021-09-20 12:07:23.2792||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 12:07:23 
+2021-09-20 12:07:23.6671||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-20 12:07:23.6671||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-20 12:07:23.6946||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-20 12:07:23.9379||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 12:07:23 
+2021-09-20 12:07:24.0575||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 12:07:24 
+2021-09-20 12:07:25.4222||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 12:07:25 
+2021-09-20 14:09:35.9516||DEBUG|LibraryAccounting.Program|init main 
+2021-09-20 14:09:37.3467||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 14:09:37 
+2021-09-20 14:09:37.5468||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-20 14:09:37.5468||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-20 14:09:37.5742||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-20 14:09:39.6931||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 14:09:39 
+2021-09-20 14:09:39.8316||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 14:09:39 
+2021-09-20 14:09:39.9627||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 14:09:39 
+2021-09-20 14:09:48.0014||INFO|LibraryAccounting.Pages.Account.RegisterModel|Register page visited: 14:09:48 
+2021-09-20 14:10:04.9564||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 14:10:04 
+2021-09-20 14:10:09.1611||INFO|LibraryAccounting.Pages.Account.LoginModel|Succeeded login: 14:10:09 
+2021-09-20 14:10:09.2422|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 14:10:09.3053|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 14:10:09.3539||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 14:10:09 
+2021-09-20 14:10:09.3539||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 14:10:09 
+2021-09-20 14:10:50.5636||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 14:10:50 
+2021-09-20 14:10:52.1082||INFO|LibraryAccounting.Pages.Account.RegisterModel|Register page visited: 14:10:52 
+2021-09-20 14:11:16.7658||INFO|LibraryAccounting.Pages.Account.RegisterModel|Succeeded register: 14:11:16 
+2021-09-20 14:11:16.7798|14|WARN|Microsoft.AspNetCore.Identity.UserManager|User password validation failed: PasswordRequiresUpper. 
+2021-09-20 14:11:16.7798||ERROR|LibraryAccounting.Pages.Account.RegisterModel|Passwords must have at least one uppercase ('A'-'Z').: 14:11:16 
+2021-09-20 14:11:30.5368||INFO|LibraryAccounting.Pages.Account.RegisterModel|Succeeded register: 14:11:30 
+2021-09-20 14:11:30.5697||INFO|LibraryAccounting.Pages.Account.RegisterModel|Sending message for user: 14:11:30 
+2021-09-20 14:15:13.3120||INFO|LibraryAccounting.Pages.Account.ConfirmEmailModel|ConfirmEmail page visited: 14:15:13 
+2021-09-20 14:15:13.3897||INFO|LibraryAccounting.Pages.Account.ConfirmEmailModel|User confirmation was successful: 14:15:13 
+2021-09-20 14:15:13.4115||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 14:15:13 
+2021-09-20 14:15:13.4145||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 14:15:13 
+2021-09-20 14:15:43.5816||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 14:15:43 
+2021-09-20 14:16:02.0142||INFO|LibraryAccounting.Pages.Account.LoginModel|Succeeded login: 14:16:02 
+2021-09-20 14:16:02.0332||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 14:16:02 
+2021-09-20 14:16:02.0332||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 14:16:02 
+2021-09-20 16:31:49.6756||DEBUG|LibraryAccounting.Program|init main 
+2021-09-20 16:31:50.8769||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 16:31:50 
+2021-09-20 16:31:51.0682||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-20 16:31:51.0690||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-20 16:31:51.1012||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-20 16:31:53.0835||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 16:31:53 
+2021-09-20 16:31:53.2349||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 16:31:53 
+2021-09-20 16:31:53.3595||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 16:31:53 
+2021-09-20 16:32:00.3642||INFO|LibraryAccounting.Pages.Account.LoginModel|Succeeded login: 16:32:00 
+2021-09-20 16:32:00.4610|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 16:32:00.5281|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 16:32:00.5769||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 16:32:00 
+2021-09-20 16:32:00.5769||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 16:32:00 
+2021-09-20 16:33:54.3057||DEBUG|LibraryAccounting.Program|init main 
+2021-09-20 16:33:55.5333||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 16:33:55 
+2021-09-20 16:33:55.7680||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-20 16:33:55.7680||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-20 16:33:55.7910||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-20 16:33:56.0666||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 16:33:56 
+2021-09-20 16:33:56.1916||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 16:33:56 
+2021-09-20 16:33:57.6205||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 16:33:57 
+2021-09-20 16:34:03.0778||INFO|LibraryAccounting.Pages.Account.LoginModel|Succeeded login: 16:34:03 
+2021-09-20 16:34:03.1978|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 16:34:03.2617|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 16:34:03.3082||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 16:34:03 
+2021-09-20 16:34:03.3082||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 16:34:03 
+2021-09-20 17:49:16.8117||DEBUG|LibraryAccounting.Program|init main 
+2021-09-20 17:49:18.0262||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 17:49:17 
+2021-09-20 17:49:18.2101||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-20 17:49:18.2101||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-20 17:49:18.2389||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-20 17:49:20.4141||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 17:49:20 
+2021-09-20 17:49:20.5502||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 17:49:20 
+2021-09-20 17:49:20.6773||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 17:49:20 
+2021-09-20 18:05:22.1355||DEBUG|LibraryAccounting.Program|init main 
+2021-09-20 18:05:23.4150||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 18:05:23 
+2021-09-20 18:05:23.5608||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-20 18:05:23.5608||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-20 18:05:23.5882||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-20 18:05:23.8593||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 18:05:23 
+2021-09-20 18:05:23.9823||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 18:05:23 
+2021-09-20 18:05:25.4799||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 18:05:25 
+2021-09-20 18:08:19.1389||DEBUG|LibraryAccounting.Program|init main 
+2021-09-20 18:08:20.4938||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 18:08:20 
+2021-09-20 18:08:20.7847||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-20 18:08:20.7847||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-20 18:08:20.8165||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-20 18:08:21.1017||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 18:08:21 
+2021-09-20 18:08:21.2201||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 18:08:21 
+2021-09-20 18:08:22.7303||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 18:08:22 
+2021-09-20 18:08:43.9221||WARN|LibraryAccounting.Pages.Account.LoginModel|Incorrect username and (or) password: 18:08:43 
+2021-09-20 18:08:46.2325||INFO|LibraryAccounting.Pages.Account.RegisterModel|Register page visited: 18:08:46 
+2021-09-20 18:08:52.1047||INFO|LibraryAccounting.Pages.Account.RegisterModel|Succeeded register: 18:08:52 
+2021-09-20 18:08:52.4047||INFO|LibraryAccounting.Pages.Account.RegisterModel|Sending message for user: 18:08:52 
+2021-09-20 18:08:54.3931|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. MailKit.Security.AuthenticationException: 535: 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials p3sm1284623lfa.228 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials p3sm1284623lfa.228 - gsmtp
+   --- End of inner exception stack trace ---
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, Boolean doAsync, CancellationToken cancellationToken)
+   at LibraryAccounting.CQRSInfrastructure.Mailing.MessageSending.SendEmailAsync(String email, String subject, String message, String recipientName) in C:\Users\Admin\source\repos\LibraryAccounting\LibraryAccounting.CQRSInfrastructure.EmailManagement\MessageSending.cs:line 38
+   at LibraryAccounting.Pages.Account.Notification.SendMessage(PageModel page, ApplicationUser user, UserManager`1 userManager, IOptions`1 options) in C:\Users\Admin\source\repos\LibraryAccounting\LibraryAccounting\Pages\Account\Notification.cs:line 23
+   at LibraryAccounting.Pages.Account.RegisterModel.Registration(RegisterViewModel register) in C:\Users\Admin\source\repos\LibraryAccounting\LibraryAccounting\Pages\Account\Register.cshtml.cs:line 71
+   at LibraryAccounting.Pages.Account.RegisterModel.OnPost(RegisterViewModel register) in C:\Users\Admin\source\repos\LibraryAccounting\LibraryAccounting\Pages\Account\Register.cshtml.cs:line 58
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 18:10:00.5997||INFO|LibraryAccounting.Pages.Account.RegisterModel|This account already exists, mail is not verified: 18:10:00 
+2021-09-20 18:10:06.8784|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. MailKit.Security.AuthenticationException: 535: 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials s9sm1769038ljp.34 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials s9sm1769038ljp.34 - gsmtp
+   --- End of inner exception stack trace ---
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, Boolean doAsync, CancellationToken cancellationToken)
+   at LibraryAccounting.CQRSInfrastructure.Mailing.MessageSending.SendEmailAsync(String email, String subject, String message, String recipientName) in C:\Users\Admin\source\repos\LibraryAccounting\LibraryAccounting.CQRSInfrastructure.EmailManagement\MessageSending.cs:line 38
+   at LibraryAccounting.Pages.Account.Notification.SendMessage(PageModel page, ApplicationUser user, UserManager`1 userManager, IOptions`1 options) in C:\Users\Admin\source\repos\LibraryAccounting\LibraryAccounting\Pages\Account\Notification.cs:line 23
+   at LibraryAccounting.Pages.Account.RegisterModel.OnPost(RegisterViewModel register) in C:\Users\Admin\source\repos\LibraryAccounting\LibraryAccounting\Pages\Account\Register.cshtml.cs:line 47
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 18:10:25.9698||INFO|LibraryAccounting.Pages.Account.RegisterModel|This account already exists, mail is not verified: 18:10:25 
+2021-09-20 18:11:11.4610||DEBUG|LibraryAccounting.Program|init main 
+2021-09-20 18:11:12.6796||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 18:11:12 
+2021-09-20 18:11:12.9094||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-20 18:11:12.9094||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-20 18:11:12.9414||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-20 18:11:13.2864||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 18:11:13 
+2021-09-20 18:11:13.5429||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 18:11:13 
+2021-09-20 18:11:15.1733||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 18:11:15 
+2021-09-20 18:11:21.3478||INFO|LibraryAccounting.Pages.Account.RegisterModel|Register page visited: 18:11:21 
+2021-09-20 18:11:30.5441||INFO|LibraryAccounting.Pages.Account.RegisterModel|This account already exists, mail is not verified: 18:11:30 
+2021-09-20 18:12:26.2224||INFO|LibraryAccounting.Pages.Account.ConfirmEmailModel|ConfirmEmail page visited: 18:12:26 
+2021-09-20 18:12:26.5268||INFO|LibraryAccounting.Pages.Account.ConfirmEmailModel|User confirmation was successful: 18:12:26 
+2021-09-20 18:12:26.6606|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 18:12:26.7385|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 18:12:26.7852||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 18:12:26 
+2021-09-20 18:12:26.7935||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 18:12:26 
+2021-09-20 18:12:46.9114||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 18:12:46 
+2021-09-20 18:12:46.9156||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 18:12:46 
+2021-09-20 18:26:17.1556||DEBUG|LibraryAccounting.Program|init main 
+2021-09-20 18:26:18.4458||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 18:26:18 
+2021-09-20 18:26:18.6658||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-20 18:26:18.6658||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-20 18:26:18.7084||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-20 18:26:20.7039||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 18:26:20 
+2021-09-20 18:26:20.7193||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 18:26:20 
+2021-09-20 18:26:23.9219||INFO|LibraryAccounting.Pages.Account.RegisterModel|Register page visited: 18:26:23 
+2021-09-20 18:26:51.3287||INFO|LibraryAccounting.Pages.Account.RegisterModel|Succeeded register: 18:26:51 
+2021-09-20 18:26:51.6633||INFO|LibraryAccounting.Pages.Account.RegisterModel|Sending message for user: 18:26:51 
+2021-09-20 18:27:08.5991||INFO|LibraryAccounting.Pages.Account.ConfirmEmailModel|ConfirmEmail page visited: 18:27:08 
+2021-09-20 18:27:08.6490||INFO|LibraryAccounting.Pages.Account.ConfirmEmailModel|User confirmation was successful: 18:27:08 
+2021-09-20 18:27:08.7848|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 18:27:08.8588|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 18:27:08.9058||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 18:27:08 
+2021-09-20 18:27:08.9138||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 18:27:08 
+2021-09-20 18:31:01.5653||DEBUG|LibraryAccounting.Program|init main 
+2021-09-20 18:31:03.4597||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 18:31:03 
+2021-09-20 18:31:03.6046||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-20 18:31:03.6249||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-20 18:31:03.6437||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-20 18:31:03.8228||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 18:31:03 
+2021-09-20 18:31:06.5262||INFO|LibraryAccounting.Pages.Account.RegisterModel|Register page visited: 18:31:06 
+2021-09-20 18:31:08.0962||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 18:31:08 
+2021-09-20 18:31:39.4812||DEBUG|LibraryAccounting.Program|init main 
+2021-09-20 18:31:40.9489||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 18:31:40 
+2021-09-20 18:31:41.1450||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-20 18:31:41.1450||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-20 18:31:41.1681||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-20 18:31:41.3525||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 18:31:41 
+2021-09-20 18:31:45.8011||INFO|LibraryAccounting.Pages.Account.RegisterModel|Register page visited: 18:31:45 
+2021-09-20 18:31:47.3181||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 18:31:47 
+2021-09-20 18:31:49.0994||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 18:31:49 
+2021-09-20 18:31:53.9700||INFO|LibraryAccounting.Pages.Account.LoginModel|Succeeded login: 18:31:53 
+2021-09-20 18:31:54.0894|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 18:31:54.1503|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 18:31:54.1944||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 18:31:54 
+2021-09-20 18:31:54.1944||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 18:31:54 
+2021-09-20 18:32:10.5451||INFO|LibraryAccounting.Pages.Account.LogoutModel|Logout: 18:32:10 
+2021-09-20 18:32:10.5540||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 18:32:10 
+2021-09-20 18:32:12.1473||INFO|LibraryAccounting.Pages.Account.RegisterModel|Register page visited: 18:32:12 
+2021-09-20 18:32:37.5570||INFO|LibraryAccounting.Pages.Account.RegisterModel|Succeeded register: 18:32:37 
+2021-09-20 18:35:34.7008||DEBUG|LibraryAccounting.Program|init main 
+2021-09-20 18:35:36.2887||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 18:35:36 
+2021-09-20 18:35:36.4586||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-20 18:35:36.4606||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-20 18:35:36.4846||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-20 18:35:36.6939||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 18:35:36 
+2021-09-20 18:35:36.8142||INFO|LibraryAccounting.Pages.Account.RegisterModel|Register page visited: 18:35:36 
+2021-09-20 18:35:38.2363||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 18:35:38 
+2021-09-20 18:36:26.8839||INFO|LibraryAccounting.Pages.Account.RegisterModel|Succeeded register: 18:36:26 
+2021-09-20 18:36:29.1611||INFO|LibraryAccounting.Pages.Account.RegisterModel|Sending message for user: 18:36:29 
+2021-09-20 18:37:00.6853||INFO|LibraryAccounting.Pages.Account.ConfirmEmailModel|ConfirmEmail page visited: 18:37:00 
+2021-09-20 18:37:05.7530||INFO|LibraryAccounting.Pages.Account.ConfirmEmailModel|User confirmation was successful: 18:37:05 
+2021-09-20 18:37:05.8809|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 18:37:05.9460|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 18:37:05.9901||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 18:37:05 
+2021-09-20 18:37:05.9951||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 18:37:05 
+2021-09-20 18:42:14.5034||DEBUG|LibraryAccounting.Program|init main 
+2021-09-20 18:42:15.6765||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 18:42:15 
+2021-09-20 18:42:15.8891||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-20 18:42:15.8891||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-20 18:42:15.9085||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-20 18:42:16.2470||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 18:42:16 
+2021-09-20 18:42:16.3903||INFO|LibraryAccounting.Pages.Account.RegisterModel|Register page visited: 18:42:16 
+2021-09-20 18:42:18.6824||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 18:42:18 
+2021-09-20 18:42:35.3846||INFO|LibraryAccounting.Pages.Account.ConfirmEmailModel|ConfirmEmail page visited: 18:42:35 
+2021-09-20 18:48:01.1861||DEBUG|LibraryAccounting.Program|init main 
+2021-09-20 18:48:02.6348||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 18:48:02 
+2021-09-20 18:48:02.7899||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-20 18:48:02.8035||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-20 18:48:02.8198||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-20 18:48:02.9885||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 18:48:02 
+2021-09-20 18:48:03.1056||INFO|LibraryAccounting.Pages.Account.RegisterModel|Register page visited: 18:48:03 
+2021-09-20 18:48:04.6449||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 18:48:04 
+2021-09-20 18:48:05.0900||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 18:48:05 
+2021-09-20 18:48:10.8286||INFO|LibraryAccounting.Pages.Account.LoginModel|Succeeded login: 18:48:10 
+2021-09-20 18:50:35.2249|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 18:50:35.2960|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 18:50:35.3444||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 18:50:35 
+2021-09-20 18:50:35.3501||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 18:50:35 
+2021-09-20 18:50:46.3196|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at LibraryAccounting.Pages.ClientPages.UserProperties.get_UserId()
+   at LibraryAccounting.Pages.ClientPages.Pages_ClientPages_BookCatalog.<>c__DisplayClass22_0.<<ExecuteAsync>b__8>d.MoveNext() in C:\Users\Admin\source\repos\LibraryAccounting\LibraryAccounting\Pages\ClientPages\BookCatalog.cshtml:line 43
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at LibraryAccounting.Pages.ClientPages.Pages_ClientPages_BookCatalog.ExecuteAsync() in C:\Users\Admin\source\repos\LibraryAccounting\LibraryAccounting\Pages\ClientPages\BookCatalog.cshtml:line 39
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 18:54:53.1656||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 18:54:53 
+2021-09-20 18:54:53.1656||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 18:54:53 
+2021-09-20 18:56:26.2269||DEBUG|LibraryAccounting.Program|init main 
+2021-09-20 18:56:27.4267||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 18:56:27 
+2021-09-20 18:56:27.5809||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-20 18:56:27.5809||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-20 18:56:27.6135||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-20 18:56:27.8965||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 18:56:27 
+2021-09-20 18:56:28.0102||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 18:56:28 
+2021-09-20 18:56:30.4318||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 18:56:30 
+2021-09-20 18:56:35.8191||INFO|LibraryAccounting.Pages.Account.LoginModel|Succeeded login: 18:56:35 
+2021-09-20 18:56:40.0023|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 18:56:40.0684|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-20 18:56:40.1124||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 18:56:40 
+2021-09-20 18:56:40.1164||INFO|LibraryAccounting.Pages.ClientPages.BookCatalogModel|BookCatalog page visited: 18:56:40 

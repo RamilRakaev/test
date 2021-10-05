@@ -1,0 +1,56 @@
+2021-09-21 10:38:48.7218||DEBUG|LibraryAccounting.Program|init main 
+2021-09-21 10:38:50.9114||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 10:38:50 
+2021-09-21 10:38:51.5785||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-21 10:38:51.5785||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-21 10:38:51.5958||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-21 10:38:53.6329||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 10:38:53 
+2021-09-21 10:38:53.7803||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 10:38:53 
+2021-09-21 10:38:53.9212||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 10:38:53 
+2021-09-21 10:41:39.8293||DEBUG|LibraryAccounting.Program|init main 
+2021-09-21 10:41:41.2500||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 10:41:41 
+2021-09-21 10:41:41.4035||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-21 10:41:41.4035||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-21 10:41:41.4357||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-21 10:41:41.7112||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 10:41:41 
+2021-09-21 10:41:41.8390||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 10:41:41 
+2021-09-21 10:41:43.1782||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 10:41:43 
+2021-09-21 11:13:54.8256||DEBUG|LibraryAccounting.Program|init main 
+2021-09-21 11:13:56.3849||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 11:13:56 
+2021-09-21 11:13:56.5765||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-21 11:13:56.5765||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-21 11:13:56.6007||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-21 11:13:58.3186||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 11:13:58 
+2021-09-21 11:13:58.4648||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 11:13:58 
+2021-09-21 11:13:58.5927||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 11:13:58 
+2021-09-21 11:16:53.0648||DEBUG|LibraryAccounting.Program|init main 
+2021-09-21 11:16:54.4113||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 11:16:54 
+2021-09-21 11:16:54.6092||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-21 11:16:54.6092||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-21 11:16:54.6399||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-21 11:16:54.9091||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 11:16:54 
+2021-09-21 11:16:55.0316||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 11:16:55 
+2021-09-21 11:16:56.3981||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 11:16:56 
+2021-09-21 11:19:12.1060||DEBUG|LibraryAccounting.Program|init main 
+2021-09-21 11:19:13.3575||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 11:19:13 
+2021-09-21 11:19:13.5513||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-21 11:19:13.5513||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-21 11:19:13.5748||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-21 11:19:13.8327||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 11:19:13 
+2021-09-21 11:19:13.9515||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 11:19:13 
+2021-09-21 11:19:15.5092||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 11:19:15 
+2021-09-21 11:35:58.3825||DEBUG|LibraryAccounting.Program|init main 
+2021-09-21 11:35:59.5904||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 11:35:59 
+2021-09-21 11:35:59.7406||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-21 11:35:59.7563||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-21 11:35:59.7731||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-21 11:36:00.0583||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 11:36:00 
+2021-09-21 11:36:00.2087||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 11:36:00 
+2021-09-21 11:36:02.0761||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 11:36:02 
+2021-09-21 11:37:20.8775||DEBUG|LibraryAccounting.Program|init main 
+2021-09-21 11:37:22.0739||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 11:37:22 
+2021-09-21 11:37:22.3203||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-21 11:37:22.3203||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-21 11:37:22.3522||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-21 11:37:22.6737||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 11:37:22 
+2021-09-21 11:37:22.8627||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 11:37:22 
+2021-09-21 11:37:24.2518||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Migrate: 11:37:24 

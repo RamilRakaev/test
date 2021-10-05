@@ -1,0 +1,761 @@
+2021-09-16 11:23:43.0086||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 11:23:45.0080||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 11:23:44 
+2021-09-16 11:23:45.1631||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 11:23:45.1631||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 11:23:45.1779||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 11:23:46.9848|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The relationship from 'Booking.Book' to 'Book.Booking' with foreign key properties {'BookId' : int} cannot target the primary key {'GenreId' : int, 'AuthorId' : int} because it is not compatible. Configure a principal key or a set of compatible foreign key properties for this relationship.
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidateNoShadowKeys(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.NpgsqlModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.ValidatingConvention.ProcessModelFinalized(IModel model)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.ImmediateConventionScope.OnModelFinalized(IModel model)
+   at Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal.ConventionDispatcher.OnModelFinalized(IModel model)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.Model.FinalizeModel()
+   at Microsoft.EntityFrameworkCore.ModelBuilder.FinalizeModel()
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder, ModelDependencies modelDependencies)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, IConventionSetBuilder conventionSetBuilder, ModelDependencies modelDependencies)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__7_3(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.get_UsersSet()
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.FindByIdAsync(String userId, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByIdAsync(String userId)
+   at Microsoft.AspNetCore.Identity.UserManager`1.GetUserAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-16 13:52:29.0465||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 13:52:30.5187||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 13:52:30 
+2021-09-16 13:52:30.6763||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 13:52:30.6763||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 13:52:30.7033||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 13:52:32.8907||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 13:52:32 
+2021-09-16 13:52:33.0094||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 13:52:33 
+2021-09-16 13:54:54.8897||INFO|LibraryAccounting.Pages.AdminPages.UserFormModel|UserForm page visited: 13:54:54 
+2021-09-16 13:57:58.5184||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookForm page visited: 13:57:58 
+2021-09-16 15:09:38.9000||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 15:09:40.2128||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 15:09:40 
+2021-09-16 15:09:40.4197||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 15:09:40.4366||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 15:09:40.4597||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 15:09:42.6736||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 15:09:42 
+2021-09-16 15:09:42.7989||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 15:09:42 
+2021-09-16 15:11:11.9690||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 15:11:11 
+2021-09-16 15:11:12.0844||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Data retrieved from database: 15:11:12 
+2021-09-16 15:11:29.9338||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Data retrieved from database: 15:11:29 
+2021-09-16 15:11:29.9338||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Books sorted: 15:11:29 
+2021-09-16 15:12:53.9853||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 15:12:55.5080||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 15:12:55 
+2021-09-16 15:12:55.7052||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 15:12:55.7052||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 15:12:55.7356||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 15:12:55.8983||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 15:12:55 
+2021-09-16 15:12:56.0234||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 15:12:56 
+2021-09-16 15:13:04.8563||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 15:13:04 
+2021-09-16 15:13:04.9785||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Data retrieved from database: 15:13:04 
+2021-09-16 15:13:09.3147||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Data retrieved from database: 15:13:09 
+2021-09-16 15:13:09.3147||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Books sorted: 15:13:09 
+2021-09-16 15:19:10.3018||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 15:19:11.7530||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 15:19:11 
+2021-09-16 15:19:11.9625||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 15:19:11.9625||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 15:19:11.9925||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 15:19:12.1641||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 15:19:12 
+2021-09-16 15:19:12.3002||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 15:19:12 
+2021-09-16 15:19:47.4785||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 15:19:47 
+2021-09-16 15:19:47.6017||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Data retrieved from database: 15:19:47 
+2021-09-16 15:22:11.3709||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 15:22:12.9956||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 15:22:12 
+2021-09-16 15:22:13.1144||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 15:22:13.1144||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 15:22:13.1373||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 15:22:13.3207||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 15:22:13 
+2021-09-16 15:22:13.4433||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 15:22:13 
+2021-09-16 15:22:27.5797||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 15:22:27 
+2021-09-16 15:22:27.7050||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Data retrieved from database: 15:22:27 
+2021-09-16 15:24:28.7283||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Books sorted: 15:24:28 
+2021-09-16 15:28:20.4711||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 15:28:22.1452||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 15:28:22 
+2021-09-16 15:28:22.2928||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 15:28:22.2928||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 15:28:22.3162||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 15:28:22.4956||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 15:28:22 
+2021-09-16 15:28:22.6141||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 15:28:22 
+2021-09-16 15:28:32.1396||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 15:28:32 
+2021-09-16 15:28:32.2635||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Data retrieved from database: 15:28:32 
+2021-09-16 15:28:42.7821||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Books sorted: 15:28:42 
+2021-09-16 15:32:14.2853||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 15:32:15.9864||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 15:32:15 
+2021-09-16 15:32:16.1278||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 15:32:16.1278||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 15:32:16.1522||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 15:32:16.3279||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 15:32:16 
+2021-09-16 15:32:16.4549||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 15:32:16 
+2021-09-16 15:32:53.4673||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 15:32:53 
+2021-09-16 15:32:53.5530||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Data retrieved from database: 15:32:53 
+2021-09-16 15:33:00.3170||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Books sorted: 15:33:00 
+2021-09-16 15:33:12.0978||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Books sorted: 15:33:12 
+2021-09-16 15:43:17.6964||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 15:43:19.2281||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 15:43:19 
+2021-09-16 15:43:19.4175||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 15:43:19.4175||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 15:43:19.4446||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 15:43:21.3288||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 15:43:21 
+2021-09-16 15:43:21.4545||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 15:43:21 
+2021-09-16 15:43:37.0085||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 15:43:37 
+2021-09-16 15:43:37.0675||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Data retrieved from database: 15:43:37 
+2021-09-16 15:43:47.0978||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|Books sorted: 15:43:47 
+2021-09-16 15:43:48.0118|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.Collections.Generic.KeyNotFoundException: The given key '3' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at LibraryAccounting.Pages.LibrarianPages.Pages_LibrarianPages_BookCatalog.ExecuteAsync() in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting\Pages\LibrarianPages\BookCatalog.cshtml:line 44
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-16 16:04:28.8912||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 16:04:30.3502||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 16:04:30 
+2021-09-16 16:04:30.5919||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 16:04:30.5919||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 16:04:30.6333||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 16:04:30.8065||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 16:04:30 
+2021-09-16 16:04:30.9304||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 16:04:30 
+2021-09-16 16:05:16.8035||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 16:05:18.3140||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 16:05:18 
+2021-09-16 16:05:18.4658||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 16:05:18.4658||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 16:05:18.4895||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 16:05:18.6676||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 16:05:18 
+2021-09-16 16:05:18.7854||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 16:05:18 
+2021-09-16 16:06:56.9491||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 16:06:58.5575||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 16:06:58 
+2021-09-16 16:06:58.7341||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 16:06:58.7341||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 16:06:58.7579||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 16:06:58.9340||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 16:06:58 
+2021-09-16 16:06:59.0651||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 16:06:59 
+2021-09-16 16:07:07.0254|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The expression 'new <>f__AnonymousType0`2(Genre = b.Genre, Author = b.Author)' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.<ProcessInclude>g__ExtractIncludeFilter|31_0(Expression currentExpression, Expression includeExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.IncludableQueryable`2.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LibraryAccounting.CQRSInfrastructure.Methods.QueryFilter`2..ctor(IEnumerable`1 element) in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting.CQRSInfrastructure.Methods\QueryFilter.cs:line 13
+   at LibraryAccounting.CQRSInfrastructure.Methods.BookMethods.GetBooksQueryHandler.Handle(GetBooksQuery request, CancellationToken cancellationToken) in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting.CQRSInfrastructure.Methods\BookMethods\GetBooksQuery.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at LibraryAccounting.CQRSInfrastructure.Methods.ValidationBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting.CQRSInfrastructure.Methods\ValidationBehaviour.cs:line 53
+2021-09-16 16:07:28.7757||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 16:07:29.8381||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 16:07:29 
+2021-09-16 16:07:29.9580||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 16:07:29.9580||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 16:07:29.9833||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 16:07:30.1587||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 16:07:30 
+2021-09-16 16:07:30.2773||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 16:07:30 
+2021-09-16 16:08:31.7843|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The expression 'new <>f__AnonymousType0`2(Genre = b.Genre, Author = b.Author)' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.<ProcessInclude>g__ExtractIncludeFilter|31_0(Expression currentExpression, Expression includeExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.IncludableQueryable`2.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LibraryAccounting.CQRSInfrastructure.Methods.QueryFilter`2..ctor(IEnumerable`1 element) in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting.CQRSInfrastructure.Methods\QueryFilter.cs:line 13
+   at LibraryAccounting.CQRSInfrastructure.Methods.BookMethods.GetBooksQueryHandler.Handle(GetBooksQuery request, CancellationToken cancellationToken) in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting.CQRSInfrastructure.Methods\BookMethods\GetBooksQuery.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at LibraryAccounting.CQRSInfrastructure.Methods.ValidationBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting.CQRSInfrastructure.Methods\ValidationBehaviour.cs:line 53
+2021-09-16 16:10:32.1846||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 16:10:33.5040||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 16:10:33 
+2021-09-16 16:10:33.6301||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 16:10:33.6301||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 16:10:33.6567||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 16:10:33.8440||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 16:10:33 
+2021-09-16 16:10:33.9761||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 16:10:33 
+2021-09-16 16:11:30.5742||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 16:11:32.0659||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 16:11:32 
+2021-09-16 16:11:32.1851||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 16:11:32.1851||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 16:11:32.2156||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 16:11:32.4760||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 16:11:32 
+2021-09-16 16:11:32.6082||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 16:11:32 
+2021-09-16 16:11:52.9959|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The expression 'new <>f__AnonymousType0`2(Genre = b.Genre, Author = b.Author)' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.<ProcessInclude>g__ExtractIncludeFilter|31_0(Expression currentExpression, Expression includeExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LibraryAccounting.CQRSInfrastructure.Methods.QueryFilter`2..ctor(IEnumerable`1 element) in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting.CQRSInfrastructure.Methods\QueryFilter.cs:line 13
+   at LibraryAccounting.CQRSInfrastructure.Methods.BookMethods.GetBooksQueryHandler.Handle(GetBooksQuery request, CancellationToken cancellationToken) in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting.CQRSInfrastructure.Methods\BookMethods\GetBooksQuery.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at LibraryAccounting.CQRSInfrastructure.Methods.ValidationBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting.CQRSInfrastructure.Methods\ValidationBehaviour.cs:line 53
+2021-09-16 16:18:59.2238||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 16:19:00.6176||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 16:19:00 
+2021-09-16 16:19:00.7575||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 16:19:00.7575||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 16:19:00.7575||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 16:19:02.8869||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 16:19:02 
+2021-09-16 16:19:03.0204||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 16:19:03 
+2021-09-16 16:19:08.7308|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The expression 'new <>f__AnonymousType1`2(Author = b.Author, Genre = b.Genre)' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.<ProcessInclude>g__ExtractIncludeFilter|31_0(Expression currentExpression, Expression includeExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LibraryAccounting.Infrastructure.Repositories.BookRepository.GetAllAsNoTracking() in C:\Users\Admin\Source\Repos\LibraryAccounting\Infrastructure\Data\LibraryAccounting.Infrastructure.Repositories\BookRepository.cs:line 27
+   at LibraryAccounting.CQRSInfrastructure.Methods.BookMethods.GetBooksQueryHandler.Handle(GetBooksQuery request, CancellationToken cancellationToken) in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting.CQRSInfrastructure.Methods\BookMethods\GetBooksQuery.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at LibraryAccounting.CQRSInfrastructure.Methods.ValidationBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting.CQRSInfrastructure.Methods\ValidationBehaviour.cs:line 53
+2021-09-16 16:21:14.1292||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 16:21:15.3864||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 16:21:15 
+2021-09-16 16:21:15.5111||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 16:21:15.5111||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 16:21:15.5380||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 16:21:15.7159||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 16:21:15 
+2021-09-16 16:21:15.9859||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 16:21:15 
+2021-09-16 16:22:22.7690||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 16:22:24.3095||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 16:22:24 
+2021-09-16 16:22:24.4419||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 16:22:24.4419||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 16:22:24.4693||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 16:22:24.6468||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 16:22:24 
+2021-09-16 16:22:24.7682||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 16:22:24 
+2021-09-16 16:23:15.9223||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 16:23:17.4269||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 16:23:17 
+2021-09-16 16:23:17.5500||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 16:23:17.5500||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 16:23:17.5718||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 16:23:17.8168||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 16:23:17 
+2021-09-16 16:23:17.9449||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 16:23:17 
+2021-09-16 16:24:25.7368||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 16:24:27.1730||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 16:24:27 
+2021-09-16 16:24:27.2989||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 16:24:27.2989||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 16:24:27.3226||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 16:24:27.4965||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 16:24:27 
+2021-09-16 16:24:27.6129||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 16:24:27 
+2021-09-16 17:08:19.9633||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 17:08:21.2633||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 17:08:21 
+2021-09-16 17:08:21.3952||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 17:08:21.4078||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 17:08:21.4242||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 17:08:23.5233||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 17:08:23 
+2021-09-16 17:08:23.6610||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 17:08:23 
+2021-09-16 17:10:53.5118|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 17:11:00.7986|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 17:11:04.9064||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 17:11:04 
+2021-09-16 17:11:06.3817|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The expression 'new <>f__AnonymousType0`2(Genre = b.Genre, Author = b.Author)' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.<ProcessInclude>g__ExtractIncludeFilter|31_0(Expression currentExpression, Expression includeExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.IncludableQueryable`2.GetEnumerator()
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.DistinctIterator`1.MoveNext()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetListItemsWithoutValueField()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetListItems()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateGroupsAndOptions(String optionLabel, IEnumerable`1 selectList, ICollection`1 currentValues)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateGroupsAndOptions(String optionLabel, IEnumerable`1 selectList)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at LibraryAccounting.Pages.LibrarianPages.Pages_LibrarianPages_BookCatalog.<ExecuteAsync>b__23_0() in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting\Pages\LibrarianPages\BookCatalog.cshtml:line 22
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at LibraryAccounting.Pages.LibrarianPages.Pages_LibrarianPages_BookCatalog.ExecuteAsync() in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting\Pages\LibrarianPages\BookCatalog.cshtml:line 4
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-16 17:20:17.1623||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 17:20:17 
+2021-09-16 17:20:18.3436|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The expression 'new <>f__AnonymousType0`2(Genre = b.Genre, Author = b.Author)' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.<ProcessInclude>g__ExtractIncludeFilter|31_0(Expression currentExpression, Expression includeExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.IncludableQueryable`2.GetEnumerator()
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.DistinctIterator`1.MoveNext()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetListItemsWithoutValueField()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetListItems()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateGroupsAndOptions(String optionLabel, IEnumerable`1 selectList, ICollection`1 currentValues)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateGroupsAndOptions(String optionLabel, IEnumerable`1 selectList)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at LibraryAccounting.Pages.LibrarianPages.Pages_LibrarianPages_BookCatalog.<ExecuteAsync>b__23_0() in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting\Pages\LibrarianPages\BookCatalog.cshtml:line 22
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at LibraryAccounting.Pages.LibrarianPages.Pages_LibrarianPages_BookCatalog.ExecuteAsync() in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting\Pages\LibrarianPages\BookCatalog.cshtml:line 4
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-16 17:24:27.3493||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 17:24:28.7478||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 17:24:28 
+2021-09-16 17:24:28.9619||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 17:24:28.9619||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 17:24:28.9619||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 17:24:29.3730||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 17:24:29 
+2021-09-16 17:24:29.4866||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 17:24:29 
+2021-09-16 17:24:50.1005|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 17:24:50.2257|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 17:24:50.2691||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 17:24:50 
+2021-09-16 17:26:47.8055|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The expression 'new <>f__AnonymousType0`2(Genre = b.Genre, Author = b.Author)' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.<ProcessInclude>g__ExtractIncludeFilter|31_0(Expression currentExpression, Expression includeExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.IncludableQueryable`2.GetEnumerator()
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.DistinctIterator`1.MoveNext()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetListItemsWithoutValueField()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetListItems()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateGroupsAndOptions(String optionLabel, IEnumerable`1 selectList, ICollection`1 currentValues)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateGroupsAndOptions(String optionLabel, IEnumerable`1 selectList)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at LibraryAccounting.Pages.LibrarianPages.Pages_LibrarianPages_BookCatalog.<ExecuteAsync>b__23_0() in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting\Pages\LibrarianPages\BookCatalog.cshtml:line 22
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at LibraryAccounting.Pages.LibrarianPages.Pages_LibrarianPages_BookCatalog.ExecuteAsync() in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting\Pages\LibrarianPages\BookCatalog.cshtml:line 4
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-16 17:27:04.4873||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 17:27:06.1469||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 17:27:06 
+2021-09-16 17:27:06.2721||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 17:27:06.2729||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 17:27:06.2961||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 17:27:06.4838||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 17:27:06 
+2021-09-16 17:27:06.6148||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 17:27:06 
+2021-09-16 17:27:24.6352|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 17:27:24.7620|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 17:27:24.8045||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 17:27:24 
+2021-09-16 17:43:19.7158||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 17:43:21.2730||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 17:43:21 
+2021-09-16 17:43:21.4485||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 17:43:21.4485||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 17:43:21.4751||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 17:43:23.5918||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 17:43:23 
+2021-09-16 17:43:23.7122||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 17:43:23 
+2021-09-16 17:43:41.1903|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 17:43:41.2569|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 17:43:43.2775||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 17:43:43 
+2021-09-16 17:43:49.4167|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The expression 'new <>f__AnonymousType0`2(Genre = b.Genre, Author = b.Author)' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.<ProcessInclude>g__ExtractIncludeFilter|31_0(Expression currentExpression, Expression includeExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.IncludableQueryable`2.GetEnumerator()
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.DistinctIterator`1.MoveNext()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetListItemsWithoutValueField()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetListItems()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateGroupsAndOptions(String optionLabel, IEnumerable`1 selectList, ICollection`1 currentValues)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateGroupsAndOptions(String optionLabel, IEnumerable`1 selectList)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at LibraryAccounting.Pages.LibrarianPages.Pages_LibrarianPages_BookCatalog.<ExecuteAsync>b__23_0() in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting\Pages\LibrarianPages\BookCatalog.cshtml:line 22
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at LibraryAccounting.Pages.LibrarianPages.Pages_LibrarianPages_BookCatalog.ExecuteAsync() in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting\Pages\LibrarianPages\BookCatalog.cshtml:line 4
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-16 17:45:43.1502||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 17:45:44.4327||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 17:45:44 
+2021-09-16 17:45:44.5690||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 17:45:44.5699||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 17:45:44.5987||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 17:45:44.8536||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 17:45:44 
+2021-09-16 17:45:45.0074||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 17:45:45 
+2021-09-16 17:45:53.7896|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 17:45:54.1429|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 17:45:54.8794||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookForm page visited: 17:45:54 
+2021-09-16 17:46:07.5807||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 17:46:07 
+2021-09-16 17:46:44.1479|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The expression 'new <>f__AnonymousType0`2(Genre = b.Genre, Author = b.Author)' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.<ProcessInclude>g__ExtractIncludeFilter|31_0(Expression currentExpression, Expression includeExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.IncludableQueryable`2.GetEnumerator()
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.DistinctIterator`1.MoveNext()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetListItemsWithoutValueField()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetListItems()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateGroupsAndOptions(String optionLabel, IEnumerable`1 selectList, ICollection`1 currentValues)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateGroupsAndOptions(String optionLabel, IEnumerable`1 selectList)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at LibraryAccounting.Pages.LibrarianPages.Pages_LibrarianPages_BookCatalog.<ExecuteAsync>b__17_0() in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting\Pages\LibrarianPages\BookCatalog.cshtml:line 22
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at LibraryAccounting.Pages.LibrarianPages.Pages_LibrarianPages_BookCatalog.ExecuteAsync() in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting\Pages\LibrarianPages\BookCatalog.cshtml:line 4
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-16 17:52:16.7878||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 17:52:18.5488||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 17:52:18 
+2021-09-16 17:52:18.6999||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 17:52:18.6999||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 17:52:18.7280||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 17:52:18.9091||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 17:52:18 
+2021-09-16 17:52:19.0375||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 17:52:19 
+2021-09-16 17:52:36.3829|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 17:52:36.5055|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 17:52:36.5485||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 17:52:36 
+2021-09-16 17:53:18.0945||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 17:53:19.6842||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 17:53:19 
+2021-09-16 17:53:19.8080||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 17:53:19.8080||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 17:53:19.8376||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 17:53:20.0239||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 17:53:20 
+2021-09-16 17:53:20.1531||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 17:53:20 
+2021-09-16 17:53:26.1283|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 17:53:26.2456|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 17:53:26.2868||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 17:53:26 
+2021-09-16 17:53:28.7399|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The expression 'new <>f__AnonymousType0`2(Genre = b.Genre, Author = b.Author)' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.<ProcessInclude>g__ExtractIncludeFilter|31_0(Expression currentExpression, Expression includeExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.IncludableQueryable`2.GetEnumerator()
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.DistinctIterator`1.MoveNext()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetListItemsWithoutValueField()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetListItems()
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateGroupsAndOptions(String optionLabel, IEnumerable`1 selectList, ICollection`1 currentValues)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateGroupsAndOptions(String optionLabel, IEnumerable`1 selectList)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at LibraryAccounting.Pages.LibrarianPages.Pages_LibrarianPages_BookCatalog.<ExecuteAsync>b__17_0() in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting\Pages\LibrarianPages\BookCatalog.cshtml:line 22
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at LibraryAccounting.Pages.LibrarianPages.Pages_LibrarianPages_BookCatalog.ExecuteAsync() in C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting\Pages\LibrarianPages\BookCatalog.cshtml:line 4
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-16 17:56:34.5798||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 17:56:36.3343||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 17:56:36 
+2021-09-16 17:56:36.4511||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 17:56:36.4511||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 17:56:36.4802||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 17:56:36.6426||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 17:56:36 
+2021-09-16 17:56:36.7669||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 17:56:36 
+2021-09-16 17:56:51.0401|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 17:56:51.1668|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 17:56:51.1959||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookForm page visited: 17:56:51 
+2021-09-16 17:56:59.2779||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 17:56:59 
+2021-09-16 18:06:33.6858||DEBUG|LibraryAccounting.Program|init main 
+2021-09-16 18:06:35.3249||INFO|LibraryAccounting.Infrastructure.Repositories.MigrationManager|Start timer of MigragionManager: 18:06:35 
+2021-09-16 18:06:35.4449||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-09-16 18:06:35.4449||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-09-16 18:06:35.4692||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Admin\Source\Repos\LibraryAccounting\LibraryAccounting 
+2021-09-16 18:06:35.6375||INFO|LibraryAccounting.Pages.IndexModel|Index page visited: 18:06:35 
+2021-09-16 18:06:35.7598||INFO|LibraryAccounting.Pages.Account.LoginModel|Login page visited: 18:06:35 
+2021-09-16 18:06:41.8463|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 18:06:41.9677|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2021-09-16 18:06:41.9910||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookForm page visited: 18:06:41 
+2021-09-16 18:06:44.8251||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookForm page visited: 18:06:44 
+2021-09-16 18:06:53.5882||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookCatalog page visited: 18:06:53 
+2021-09-16 18:07:46.8071||INFO|LibraryAccounting.Pages.LibrarianPages.BookCatalogModel|BookForm page visited: 18:07:46 
