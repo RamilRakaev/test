@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bxo8LAvF4PHqn6DIwf/GfEvm6V0a8GNHoq1OXxu1zxPgNDu3GmO2XP0rFV+Z2gvsyJPlOZex431U8E21I3Rbbw==",
+  "dgSpecHash": "WBfBRyTAf3nwkG021szqwEG5x6lb9/XLjMa1xD4P7qC/QWbsAKBb122JzCufCSxX7oA9khHxfMr0ifWJ73EUCA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Source\\Repos\\RamilRakaev\\test\\test\\test.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\test\\test\\test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\documentformat.openxml\\2.13.1\\documentformat.openxml.2.13.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\google.apis\\1.55.0\\google.apis.1.55.0.nupkg.sha512",
