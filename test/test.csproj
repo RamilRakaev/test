@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>FirstAssembly.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
@@ -14,6 +14,12 @@
     <PackageReference Include="Google.Apis.Vision.v1" Version="1.55.0.2412" />
     <PackageReference Include="Telegram.Bot" Version="16.0.2" />
     <PackageReference Include="Telegram.Bot.Extensions.Polling" Version="0.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\RecruitingStaffWebApp\Domain.Model\Domain.Model.csproj" />
+    <ProjectReference Include="..\..\RecruitingStaffWebApp\Domain.Model\RecruitingStaff.Domain.Model.csproj" />
+    <ProjectReference Include="..\..\RecruitingStaffWebApp\Infrastructure.Repositories\RecruitingStaff.Infrastructure.Repositories.csproj" />
   </ItemGroup>
 
 </Project>
