@@ -21,15 +21,18 @@ namespace test
         private readonly IRepository<Candidate> _candidateRepository;
         private readonly IRepository<Questionnaire> _questionnaireRepository;
         private readonly IRepository<Vacancy> _vacancyRepository;
+        private readonly IRepository<CandidateVacancy> _candidateVacancyRepository;
 
         public ParseQuestionnare(
             IRepository<Candidate> candidateRepository,
             IRepository<Questionnaire> questionnaireRepository,
-            IRepository<Vacancy> vacancyRepository)
+            IRepository<Vacancy> vacancyRepository,
+            IRepository<CandidateVacancy> candidateVacancyRepository)
         {
             _candidateRepository = candidateRepository;
             _questionnaireRepository = questionnaireRepository;
             _vacancyRepository = vacancyRepository;
+            _candidateVacancyRepository = candidateVacancyRepository;
         }
 
         public async Task Parse(string document)
@@ -66,18 +69,27 @@ namespace test
             var vacancy = _vacancyRepository
                 .GetAllAsNoTracking()
                 .FirstOrDefault(v => v.Name == vacancyName);
-            if (vacancy == null)
-            {
-                vacancy = new Vacancy() { Name = vacancyName };
-                await _vacancyRepository.AddAsync(vacancy);
-                await _vacancyRepository.SaveAsync();
-            }
-
+            
             candidate.FullName = ExtractCellTextFromRow(rows, 1, 1);
             var dateStr = ExtractCellTextFromRow(rows, 2, 1);
             candidate.DateOfBirth = dateStr != string.Empty ? Convert.ToDateTime(dateStr) : new DateTime();
             await _candidateRepository.AddAsync(candidate);
+            await _candidateRepository.SaveAsync();
+            if (vacancy == null)
+            {
+                vacancy = new Vacancy() { Name = vacancyName};
+                await _vacancyRepository.AddAsync(vacancy);
+                await _vacancyRepository.SaveAsync();
+                var candidateVacancy = new CandidateVacancy()
+                {
+                    CandidateId = candidate.Id,
+                    VacancyId = vacancy.Id
+                };
+                await _candidateVacancyRepository.AddAsync(candidateVacancy);
+                await _candidateVacancyRepository.SaveAsync();
+            }
         }
+
         private string ExtractCellTextFromTable(OpenXmlElement table, int row, int cell)
         {
             return table.ChildElements
