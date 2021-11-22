@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecruitingStaff.Domain.Mode
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecruitingStaff.Infrastructure.Repositories", "..\RecruitingStaffWebApp\Infrastructure.Repositories\RecruitingStaff.Infrastructure.Repositories.csproj", "{1CEDBDD2-D7E3-4E33-A5F6-EF2BBD723E55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkLibrary", "LinkLibrary\LinkLibrary.csproj", "{835C81A3-536B-42DE-BDEF-C4C8A193CC1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1CEDBDD2-D7E3-4E33-A5F6-EF2BBD723E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CEDBDD2-D7E3-4E33-A5F6-EF2BBD723E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CEDBDD2-D7E3-4E33-A5F6-EF2BBD723E55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{835C81A3-536B-42DE-BDEF-C4C8A193CC1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{835C81A3-536B-42DE-BDEF-C4C8A193CC1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{835C81A3-536B-42DE-BDEF-C4C8A193CC1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{835C81A3-536B-42DE-BDEF-C4C8A193CC1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
