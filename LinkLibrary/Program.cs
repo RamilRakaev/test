@@ -9,19 +9,19 @@ namespace LinkLibrary
         static void Main(string[] args)
         {
             string path = Console.ReadLine();
-            LinksManager manager = new (path);
+            LinksManager manager = new(path);
             manager.OutputLinks = (SourceReferencing[] reference) =>
             {
                 foreach (var source in reference)
                 {
                     Console.WriteLine($"{source.Titles}\nСсылки:");
-                    foreach(var link in source.Links)
+                    foreach (var link in source.Links)
                     {
                         Console.WriteLine($"{link}");
                     }
                 }
             };
-            Console.WriteLine("Hello World!");
+            Console.ReadLine();
         }
     }
 
@@ -45,7 +45,7 @@ namespace LinkLibrary
         {
             if (File.Exists(_path))
             {
-                using (StreamReader reader = new (_path))
+                using (StreamReader reader = new(_path))
                 {
                     var references = LinksParsing.Parse(reader.ReadToEnd());
                     OutputLinks(references);
@@ -67,12 +67,14 @@ namespace LinkLibrary
         {
             var lines = page.Split("\n", StringSplitOptions.RemoveEmptyEntries);
             var references = new List<SourceReferencing>();
-            foreach(var line in lines)
+
+            string titles = "";
+            foreach (var line in lines)
             {
                 if (line.Contains("separator"))
                 {
                     var sourceReferencing = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
-                    var titles = sourceReferencing[0];
+                    titles += sourceReferencing[0];
                     var links = sourceReferencing[1];
                     foreach (var title in links.Split(and, StringSplitOptions.RemoveEmptyEntries))
                     {
@@ -83,6 +85,11 @@ namespace LinkLibrary
                         };
                         references.Add(reference);
                     }
+                    titles = "";
+                }
+                else
+                {
+                    titles += line;
                 }
             }
             return references.ToArray();

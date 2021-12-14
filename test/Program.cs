@@ -6,30 +6,32 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace test
 {
-    public class Supchik
+    interface IA
     {
-        public IEnumerator GetEnumerator()
-        {
-            throw new NotImplementedException();
 
-        }
-        public string FullName { get; set; }
-
-        public static int Add(params int[] terms)
-        {
-            int result = 0;
-            foreach(var term in terms)
-            {
-                result += term;
-            }
-            return result;
-        }
     }
+
+    class A : IA
+    {
+
+    }
+
+    interface IB
+    {
+
+    }
+
+    class B
+    {
+
+    }
+
     public class Node
     {
         public Node Parent { get; set; }
@@ -48,20 +50,19 @@ namespace test
             {
                 return;
             }
-            foreach(var child in node.Children)
+            foreach (var child in node.Children)
             {
                 GetChildrenNames(action, child);
             }
         }
-        
     }
 
     public class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
             #region
-            Node parent = new ();
+            Node parent = new();
             parent.Name = "Fucking parent";
 
             Node child1 = new()
@@ -89,6 +90,7 @@ namespace test
             };
             #endregion
 
+            Console.WriteLine((new List<string>() { }).Remove(""));
             //Console.WriteLine(child4.GetLevel());
 
             #region
@@ -113,8 +115,14 @@ namespace test
             };
             #endregion
 
-            parent.GetChildrenNames((string name) => Console.WriteLine(name));
-            Console.ReadLine();
+            //parent.GetChildrenNames((string name) => Console.WriteLine(name));
+
+            A value = new();
+            var result = (IA)value;
+            var asResult = (IA)value;
+
+            var intValue = 1;
+            var intResult = (IComparable) intValue;
         }
     }
 
