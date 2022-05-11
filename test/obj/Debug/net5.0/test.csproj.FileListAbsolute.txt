@@ -3,7 +3,6 @@ C:\Users\Admin\source\repos\test\test\bin\Debug\net5.0\test.deps.json
 C:\Users\Admin\source\repos\test\test\bin\Debug\net5.0\test.runtimeconfig.json
 C:\Users\Admin\source\repos\test\test\bin\Debug\net5.0\test.runtimeconfig.dev.json
 C:\Users\Admin\source\repos\test\test\bin\Debug\net5.0\test.dll
-C:\Users\Admin\source\repos\test\test\bin\Debug\net5.0\ref\test.dll
 C:\Users\Admin\source\repos\test\test\bin\Debug\net5.0\test.pdb
 C:\Users\Admin\source\repos\test\test\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
 C:\Users\Admin\source\repos\test\test\bin\Debug\net5.0\Google.Apis.dll
@@ -55,3 +54,4 @@ C:\Users\Admin\source\repos\test\test\bin\Debug\net5.0\RecruitingStaff.Domain.In
 C:\Users\Admin\source\repos\test\test\bin\Debug\net5.0\RecruitingStaff.Infrastructure.Repositories.dll
 C:\Users\Admin\source\repos\test\test\bin\Debug\net5.0\RecruitingStaff.Infrastructure.Repositories.pdb
 C:\Users\Admin\source\repos\test\test\bin\Debug\net5.0\RecruitingStaff.Domain.Interfaces.pdb
+C:\Users\Admin\source\repos\test\test\obj\Debug\net5.0\refint\test.dll
