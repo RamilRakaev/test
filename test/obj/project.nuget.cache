@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "BjtBZytEmz9k/Yih3MeW5TW6NSKa8PJj5v1iSSNZBEPyNCQAtuY3pp5xO0TEkryKLVK0Ov8mfeN6EM5aDkIUZQ==",
-  "success": true,
+  "dgSpecHash": "mb279PlS/ot0/8BGs43PDFK6PuSen6R+k16hYZmtpFjTY9HCufffo3V85JNXhMX9IVC5wDwqqR468lamCQ4kSA==",
+  "success": false,
   "projectFilePath": "C:\\Users\\Admin\\source\\repos\\test\\test\\test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\documentformat.openxml\\2.13.1\\documentformat.openxml.2.13.1.nupkg.sha512",
@@ -116,5 +116,15 @@
     "C:\\Users\\Admin\\.nuget\\packages\\telegram.bot\\16.0.2\\telegram.bot.16.0.2.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\telegram.bot.extensions.polling\\0.2.0\\telegram.bot.extensions.polling.0.2.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Не удалось найти проект \"C:\\Users\\Admin\\source\\repos\\RecruitingStaffWebApp\\Domain.Model\\Domain.Model.csproj\". Убедитесь, что ссылка на проект действительна и файл проекта существует.",
+      "libraryId": "C:\\Users\\Admin\\source\\repos\\RecruitingStaffWebApp\\Domain.Model\\Domain.Model.csproj",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

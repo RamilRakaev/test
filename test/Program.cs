@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace ConsoleApplication1
 {
@@ -7,13 +6,9 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            Dictionary<int, string> dict = new()
-            {
-                { 1, "str1" },
-                { 2, "str2" },
-            };
+            Console.WriteLine(DateTime.Now.ToString("yyyy-mm-ddTHH:mm"));
+            Console.ReadLine();
 
-            dict[10] = "key";
         }
 
     }
